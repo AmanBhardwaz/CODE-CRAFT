@@ -60,7 +60,13 @@
     <section class="aman">
         <style>
             .aman {
-                background-color: #212121;
+                background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(./natural.4.png);
+                min-height: 100vh;
+            width: 100%;
+            
+            background-position: center;
+            background-size: cover;
+            position: relative;
             }
 
             .aman h1 {
@@ -96,7 +102,7 @@
                     margin: 2px 20px;
                     /* reduced margin to make it responsive */
                     border-radius: 28px;
-                    background: #1c0ba1;
+                    background: #1a0996;
                     margin-bottom: 20px;
                     width: calc(33.33% - 40px);
                     /* added to make it responsive */
@@ -141,7 +147,7 @@
                         <h2 class="SUMAN">Protecting Yourself</h2>
                         <style>
                             .sd{
-                                color: #212121;
+                                color: #0c0c0c;
                             }
                         </style>
                         <p class="center"><h1 class="sd"> Stay away from dangerous animals. If you come across an injured animal that
@@ -165,7 +171,7 @@
                         <p class="center"><h1> Coax the animal into a carrier or box. If the animal is very tame and/or not
                             very mobile, you may be able pick it up and place it in a cat carrier or cardboard box. If
                             the animal will not let you pick it up, you can try using food to help coax it into the
-                            carrier.[8]
+                            carrier.
 
                             Place a towel or blanket in the carrier or box to make it more comfortable.
                             If you are using a box, make sure it is ventilated.</h1>
@@ -266,19 +272,80 @@
             </section>
         </section>
         <style>
-            
-        .shalini{
-         min-height: 100vh;
-            width: 100%;
-            background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(./grass2);
-            background-position: center;
-            background-size: cover;
-            position: relative;
-        }
+            #feedback-form {
+               
+  max-width: 700px;
+  margin: 40px auto;
+  
+  padding: 20px;
+  background-color: transparent;
+  border: 3px solid #080707c3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: rgb(234, 242, 234);
+  font-size: 24px;
+
+}
+
+#feedback-form label {
+  display: block;
+  margin-bottom: 10px;
+  
+}
+
+#feedback-form input[type="text"], #feedback-form input[type="email"], #feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  color: rgb(51, 0, 255);
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#feedback-form input[type="radio"] {
+  margin-right: 10px;
+}
+
+#feedback-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: #c90c0c;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#feedback-form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
         </style>
-        <section class="shalini">
+            <section id="feedback-form">
+                <h2>Leave Your Feedback</h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="473e17f7-45ff-426a-a0b8-c2b2ffcedc2c">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required><br><br>
+                  
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required><br><br>
+                  
+                  <label for="feedback">Feedback:</label>
+                  <textarea id="feedback" name="feedback" required></textarea><br><br>
+                  
+                  <label for="rating">Rating:</label>
+                  <input type="radio" id="rating-1" name="rating" value="1">
+                  <label for="rating-1">1 (Poor)</label>
+                  <input type="radio" id="rating-2" name="rating" value="2">
+                  <label for="rating-2">2 (Fair)</label>
+                  <input type="radio" id="rating-3" name="rating" value="3">
+                  <label for="rating-3">3 (Good)</label>
+                  <input type="radio" id="rating-4" name="rating" value="4">
+                  <label for="rating-4">4 (Very Good)</label>
+                  <input type="radio" id="rating-5" name="rating" value="5">
+                  <label for="rating-5">5 (Excellent)</label><br><br>
+                  
+                  <input type="submit" value="Submit Feedback">
+                </form>
             
-        </section>
+             </section>
 </body>
 
 </html>
