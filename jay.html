@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeastGuard Alliance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        .header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(./natural3.png);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="animalprotectinglogo.jpeg"></a>
+            <div class="nav-link" id="navlink">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aman.html">ABOUT</a></li>
+                    <li><a href="aditya.html">CONTACT</a></li>
+                    <li><a href="amandeep.html">REWARD</a></li>
+                    <li><a href="jay.html">ANIMAL PROTECTION</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-bar">
+            <h1>BEAST GUARD ALLIANCE</h1>
+            <P>A compassionate collective of five dedicated individuals and a growing network of volunteers,<br>driven
+                to protect and care for homeless and injured animals.
+
+
+            </P>
+            <a href="" class="btn1">VISIT US FOR MORE INFORMATION</a>
+        </div>
+    </section>
+    <script>
+        var navlink = document.getElementById("navlink");
+        function showMenu() {
+            navlink.style.right = "0"
+        }
+        function hideMenu() {
+            navlink.style.right = "-200px";
+        }
+    </script>
+    <section class="aman">
+        <style>
+            .aman {
+                background-color: #212121;
+            }
+
+            .aman h1 {
+                color: #f2f2f2;
+            }
+        </style>
+        <section>
+            <style>
+                #home h1 {
+                    color: white;
+                    text-align: center;
+                    font-family: 'Bree Serif', serif;
+                }
+
+                #home p {
+                    color: rgb(209, 30, 30);
+                    text-align: center;
+                    font-size: 1.5rem;
+                    font-family: 'Bree Serif', serif;
+                }
+
+                /* Services Section */
+                #services {
+                    margin: 34px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    /* added to make it responsive */
+                }
+
+                #services .box {
+                    border: 2px solid brown;
+                    padding: 34px;
+                    margin: 2px 20px;
+                    /* reduced margin to make it responsive */
+                    border-radius: 28px;
+                    background: #1c0ba1;
+                    margin-bottom: 20px;
+                    width: calc(33.33% - 40px);
+                    /* added to make it responsive */
+                }
+
+                #services .box img {
+                    height: 160px;
+                    margin: auto;
+                    display: block;
+                }
+
+                #services .box p {
+                    font-family: 'Bree Serif', serif;
+                }
+
+                /* Media Queries for responsiveness */
+                @media (max-width: 1024px) {
+                    #services .box {
+                        width: calc(50% - 40px);
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    #services .box {
+                        width: 100%;
+                    }
+                }
+
+                .SUMAN {
+                    color: #b31c1c;
+                    font-size: 30px;
+                }
+                
+            </style>
+
+            <section id="services-container">
+                <h1 class="SUMAN">HOW TO APPROACH AN INJURED ANIMAL</h1>
+                <div id="services">
+                    <div class="box">
+                        
+                        <img src="animal13.jpeg" alt="">
+                        <h2 class="SUMAN">Protecting Yourself</h2>
+                        <style>
+                            .sd{
+                                color: #212121;
+                            }
+                        </style>
+                        <p class="center"><h1 class="sd"> Stay away from dangerous animals. If you come across an injured animal that
+                            could cause you serious harm, such as a bear, a wolf, or a snake, do not approach it! In
+                            this case, it's best to leave the rescue up to the professionals. Stay at a safe distance
+                            and call your local animal control office. If they can't help you, they should be able to
+                            refer you to someone who can.</h1>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <img src="animal10.jpg" alt="">
+                        <h2 class="SUMAN">Making the Animal Feel Safe</h2>
+                        <p class="center"><h1> the animal slowly. When approaching an animal, keep in mind that the
+                            animal does not know you and does not know why you are approaching. Whether you are dealing
+                            with a wild animal or a domestic animal, it's important to move very slowly in order to
+                            avoid scaring it.</h1></p>
+                    </div>
+                    <div class="box">
+                        <img src="animal11.jpg" alt="">
+                        <h2 class="SUMAN">Catching the Animal and Getting Help</h2>
+                        <p class="center"><h1> Coax the animal into a carrier or box. If the animal is very tame and/or not
+                            very mobile, you may be able pick it up and place it in a cat carrier or cardboard box. If
+                            the animal will not let you pick it up, you can try using food to help coax it into the
+                            carrier.[8]
+
+                            Place a towel or blanket in the carrier or box to make it more comfortable.
+                            If you are using a box, make sure it is ventilated.</h1>
+
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section>
+                <style>
+                    .container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        font-size: 20px;
+                    }
+
+                    .card {
+                        grid-area: 10px;
+                        margin-left: 750px;
+                        margin-right: 50px;
+                        margin-bottom: 30px;
+                        margin-top: 30px;
+                        
+
+                        padding: 20px;
+                        border: 2px solid brown;
+                        border-radius: 10px;
+                        background-color: burlywood;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                        max-width: 70%;
+                        /* add this to set a maximum width for the card */
+                    }
+
+                    .card h2 {
+                        text-align: center;
+                    }
+
+                    .card p {
+                        text-align: justify;
+                    }
+
+                    /* Add media queries to make the cards responsive */
+                    @media (max-width: 768px) {
+                        .card {
+                            margin: 10px;
+                            padding: 10px;
+                        }
+                    }
+
+                    @media (max-width: 480px) {
+                        .card {
+                            margin: 5px;
+                            padding: 5px;
+                        }
+
+                    }
+
+                    .SUM {
+                        color: #f2f2f2;
+                        font-size: 30px;
+
+                    }
+                </style>
+                <div class="container">
+                    <div class="card" id="card-1">
+                        <h2 class="SUM">CALL FOR HELP</h2>
+                        <img src="" alt="">
+                        <p> Call for help. If you can't get the animal to a vet yourself, call for help as soon as
+                            you've done everything you can to restrain the animal or get it away from danger. Your local
+                            animal control agency will be able to handle the situation from here.[14]
+
+                            If you don't have an animal control agency in your area, call the police. You might also
+                            consider calling a wildlife rehabilitator if you can find one in your area.
+
+
+                        </p>
+                    </div>
+                    <div class="card" id="card-2">
+                        <h2 class="SUM">BRING THEM TO SAFE PLACE</h2>
+                        <p>Bring the animal to a vet or shelter. If you have successfully caught the animal and are able
+                            to transport it, make sure to get it medical help right away. Depending on the type of
+                            animal it is and your location, you may have the option of taking it to a shelter or a vet.
+                        </p>
+                    </div>
+                    <div class="card" id="card-3">
+                        <h2 class="SUM">COVER THE INJURED ANIMAL</h2>
+                        <p>Cover large animals that can't be moved. If the injured animal is too large to be placed in a
+                            carrier and you cannot get it into your car, do what you can to make it more comfortable
+                            while you call for help. Covering the animal with a blanket, towel, or article or clothing
+                            will help keep it warm.</p>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+</body>
+
+</html>
