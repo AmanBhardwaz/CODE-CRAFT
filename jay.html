@@ -344,7 +344,37 @@
                   
                   <input type="submit" value="Submit Feedback">
                 </form>
-            
+            <script>
+                const form = document.getElementById('feedback-form');
+const emailInput = document.getElementById('email');
+const errorMessage = document.getElementById('error-message');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const emailValue = emailInput.value.trim();
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  if (!emailRegex.test(emailValue)) {
+    errorMessage.textContent = 'Invalid email address';
+    return;
+  }
+
+  // If the email is valid, you can submit the form here
+  // For example, you can use the Fetch API to send the form data to a server
+  // fetch('/submit-feedback', {
+  //   method: 'POST',
+  //   headers: { 'Content-Type': 'application/json' },
+  //   body: JSON.stringify({
+  //     name: document.getElementById('name').value,
+  //     email: emailValue,
+  //     feedback: document.getElementById('feedback').value,
+  //     rating: document.querySelector('input[name="rating"]:checked').value
+  //   })
+  // });
+
+  alert('Form submitted successfully!');
+});
+            </script>
              </section>
 </body>
 
